@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-
+hjdsjh
 <!-- Sección que permite mostrar mensajes en pantalla-->
 @if(Session::has('Mensaje'))
 <div class="alert alert-success" role="alert">
