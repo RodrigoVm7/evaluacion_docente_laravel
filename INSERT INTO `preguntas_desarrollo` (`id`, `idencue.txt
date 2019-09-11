@@ -1,0 +1,117 @@
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '3', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '3', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '4', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '4', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '5', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '5', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '6', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '6', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '8', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '8', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '9', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '9', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '10', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '10', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '11', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '11', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '13', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '13', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '14', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '14', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '15', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '15', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '16', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '16', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '17', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '17', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '18', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '18', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '19', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '19', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '21', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '21', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '22', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '22', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '23', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '23', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '24', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '24', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '25', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '25', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '26', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '26', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '28', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '28', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '30', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '30', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '31', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '31', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '32', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '32', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '33', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '33', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '34', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '34', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '35', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '35', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '36', '¿ Me darían algún consejo para enseñar ?', NULL, NULL);
+
+INSERT INTO `preguntas_desarrollo` (`id`, `idencuesta`, `pregunta`, `created_at`, `updated_at`) VALUES (NULL, '36', '¿ Cuentenme que les parecio el semestre ?', NULL, NULL);
