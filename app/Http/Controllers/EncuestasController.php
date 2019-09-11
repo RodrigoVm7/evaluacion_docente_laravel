@@ -4,15 +4,26 @@ namespace App\Http\Controllers;
 
 use App\encuestas;
 use App\Respuestas;
+<<<<<<< HEAD
+=======
+use App\cursos_usuarios;
+use App\Carreras;
+use App\Cursos;
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
 use Illuminate\Http\Request;
 
 class EncuestasController extends Controller
 {
+<<<<<<< HEAD
     /* Funcion que retorna la vista principal de un profesor, donde se le muestran desplegadas todas las 
+=======
+    /* Función que retorna la vista principal de un profesor, donde se le muestran desplegadas todas las 
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
     encuestas que haya realizado */
     public function index(Request $request){
          $request->user()->authorizeRoles(['profesor']);
          $datos=encuestas::where('rutProfesor',$request->user()->rut)->get();
+<<<<<<< HEAD
          return view('encuestas.index',compact('datos'));
     }
 
@@ -24,6 +35,23 @@ class EncuestasController extends Controller
     }
 
     /* Funcion que almacena una encuesta en la base de datos*/
+=======
+         //$datos_cursos=Cursos::where('codigo_curso',$datos->codigoCurso)->get();
+         //$carreras=Carreras::where('id_carrera',$datos_cursos->id_carrera)->get();
+         return view('encuestas.index',compact('datos'));
+         //return response()->json($datos[0]->codigoCurso);
+    }
+
+    /* Función que retorna a la vista para crear una encuesta*/
+    public function create(Request $request){
+        $request->user()->authorizeRoles(['admin','profesor']);
+        $datos=cursos_usuarios::where('rut',$request->user()->rut)->get();
+        return view('encuestas.create',compact('datos'));
+        
+    }
+
+    /* Función que almacena una encuesta en la base de datos*/
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
     public function store(Request $request){
         $request->user()->authorizeRoles(['admin','profesor']);
         $campos=[
@@ -39,6 +67,7 @@ class EncuestasController extends Controller
         return redirect('encuestas')->with('Mensaje','Encuesta agregada con éxito');
     }
 
+<<<<<<< HEAD
     /* Funcion que retorna una vista para editar campos de una encuesta */
     public function edit(Request $request,$id_encuesta){
         $request->user()->authorizeRoles(['admin','profesor']);
@@ -47,6 +76,17 @@ class EncuestasController extends Controller
     }
 
     /* Funcion que guarda los datos actualizados de una encuesta */
+=======
+    /* Función que retorna una vista para editar campos de una encuesta */
+    public function edit(Request $request,$id_encuesta){
+        $request->user()->authorizeRoles(['admin','profesor']);
+        $encuesta= Encuestas::findOrFail($id_encuesta);
+        $datos=cursos_usuarios::where('rut',$request->user()->rut)->get();
+        return view('encuestas.edit',compact('encuesta','datos'));
+    }
+
+    /* Función que guarda los datos actualizados de una encuesta */
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
     public function update(Request $request, $id_encuesta){
         $request->user()->authorizeRoles(['admin','profesor']);
         $datosEncuesta=request()->except(['_token','_method']);
@@ -54,15 +94,22 @@ class EncuestasController extends Controller
         return redirect('encuestas')->with('Mensaje','Encuesta modificada con éxito');
     }
 
+<<<<<<< HEAD
     /* Funcion que permite eliminar una encuesta*/
+=======
+    /* Función que permite eliminar una encuesta*/
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
     public function destroy(Request $request,$id_encuesta){
         $request->user()->authorizeRoles(['admin','profesor']);
         Encuestas::destroy($id_encuesta);
         return redirect('encuestas')->with('Mensaje','Encuesta eliminada con éxito');
     }
+<<<<<<< HEAD
 
     public function getEncuestas(){
         $encuestas=encuestas::all();
         return response()->json($encuestas);
     }
+=======
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
 }

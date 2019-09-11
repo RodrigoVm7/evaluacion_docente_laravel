@@ -35,6 +35,7 @@
 <form action="{{url('/encuestas')}}" class="form-horizontal" method="post">
 	{{ csrf_field() }}
 	<div class="form-group">
+<<<<<<< HEAD
 		<label for="asunto" class="control-label">{{'Asunto2'}}</label>
 		<input type="text" class="form-control {{$errors->has('asunto')?'is-invalid':''}}" name="asunto" id="asunto" value="">
 		{!! $errors->first('asunto','<div class="invalid-feedback">:message</div>') !!}
@@ -65,6 +66,33 @@ hjhjhj
 		{!! $errors->first('codigoCurso','<div class="invalid-feedback">:message</div>') !!} -->
 	</div>
 	
+=======
+		<label for="asunto" class="control-label">{{'Asunto'}}</label>
+		<input type="text" class="form-control {{$errors->has('asunto')?'is-invalid':''}}" name="asunto" id="asunto" value="">
+		{!! $errors->first('asunto','<div class="invalid-feedback">:message</div>') !!}
+	</div>
+
+	<div class="form-group">
+		<label for="codigoCurso" class="control-label">{{'Codigo del Curso'}}</label><br>
+		<select name="codigoCurso" size="1" style="
+			    display: block;
+				width: 100%;
+    			height: calc(2.19rem + 2px);
+				padding: .375rem .75rem;
+				font-size: .9rem;
+				line-height: 1.6;
+				color: #495057;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid #ced4da;
+				border-radius: .25rem;">
+			<option selected> Elige un Curso </option>
+			@foreach($datos as $dato)
+				<option value="{{$dato->codigo_curso}}">{{$dato->codigo_curso}}</option>
+			@endforeach
+		</select>
+	</div>
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
 
 	<div class="form-group">
 		<label for="rutProfesor" class="control-label">{{'Rut Profesor'}}</label>

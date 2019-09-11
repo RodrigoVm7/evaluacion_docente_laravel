@@ -110,8 +110,11 @@ class PreguntasController extends Controller
         Preguntas::destroy($id_pregunta);
         return redirect('preguntas/'.$id_encuesta.'/index')->with('Mensaje','Pregunta eliminada con exito');
     }
+<<<<<<< HEAD
 
     public function prueba(){
         return view('prueba');
     }
+=======
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
 }

@@ -79,6 +79,10 @@ Route::get('/admin/buscareditar','AdministradorController@buscareditar')->middle
 Route::post('/admin/editar','AdministradorController@editar')->middleware('auth');
 Route::post('/admin/perfileditado','AdministradorController@perfileditado')->middleware('auth');
 Route::get('/admin/añadir','AdministradorController@añadir')->middleware('auth');
+<<<<<<< HEAD
 Route::post('/admin/insertar','AdministradorController@insertar')->middleware('auth');
 Route::get('/encuesta/api','EncuestasController@getEncuestas')->middleware('auth');
 Route::get('/prueba','PreguntasController@prueba')->middleware('auth');
+=======
+Route::post('/admin/insertar','AdministradorController@insertar')->middleware('auth');
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b

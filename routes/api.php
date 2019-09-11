@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+<<<<<<< HEAD
+=======
+
+Route::resource('preguntasapi','PreguntasApiController');
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
