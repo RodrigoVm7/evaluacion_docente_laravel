@@ -3,11 +3,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 nedee
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Evaluacion Docent</title>
+=======
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>Evaluacion Docente</title>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,7 +26,11 @@ nedee
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
             gfhfhg
+=======
+            
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
 
 

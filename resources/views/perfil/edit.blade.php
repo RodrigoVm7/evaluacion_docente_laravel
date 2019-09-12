@@ -4,7 +4,12 @@
 
 <div class="container">
 
+<<<<<<< HEAD
 
+=======
+<!--Sección que mediante el llenado de un formulario, permite editar un perfil.
+	Posteriormente, los datos son enviados mediante el método POST a la url "/resultados/editar"-->
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 <form action="{{ url('/resultados/editar') }}" class="form-horizontal" method="post">
 {{ csrf_field() }}
 
@@ -23,8 +28,13 @@
 		<input type="text" class="form-control" name="email" id="email" value="{{ $perfil->email}}">
 	</div>
 
+<<<<<<< HEAD
 	<input type="submit" class="btn btn-success" value="Modificar">
 	<a class="btn btn-primary" href="{{ url('encuestas') }}">Regresar</a>
+=======
+	<input type="submit" class="btn btn-success" value="Modificar ✎">
+	<a class="btn btn-primary" href="{{ url('/iniciar') }}">Regresar ←</a>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
 </form>
 </div>

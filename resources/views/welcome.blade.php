@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -69,12 +72,21 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
+<<<<<<< HEAD
             @else
                 <a href="{{ route('login') }}">Iniciar Sesion</a>
 
                 @if (Route::has('register'))
                     <a href="{{ route('register') }}">Registrarse</a>
                     @endif
+=======
+                    @else
+                        <a href="{{ route('login') }}">Iniciar Sesion</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}">Registrarse</a>
+                        @endif
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
                     @endauth
                 </div>
             @endif

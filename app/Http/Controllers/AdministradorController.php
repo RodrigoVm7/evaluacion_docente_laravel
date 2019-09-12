@@ -8,6 +8,11 @@ use App\Respuestas;
 use App\Resultados;
 use App\Preguntas;
 use App\Role_User;
+<<<<<<< HEAD
+=======
+use App\preguntasDesarrollo;
+use App\respuestasDesarrollo;
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -29,7 +34,11 @@ class AdministradorController extends Controller
     /* Funcion que retorna a una vista donde se visualizan todas las encuestas realizadas en el sistema */
     public function mostrartodo(Request $request,encuestas $encuestas){
         $request->user()->authorizeRoles(['admin']);
+<<<<<<< HEAD
         $datoss['datos']=Encuestas::where('finalizada','=',1)->paginate(10);
+=======
+        $datoss['datos']=Encuestas::where('finalizada','=',1)->get();
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
         return view('admin.mostrartodo',$datoss);
     }
 
@@ -37,14 +46,28 @@ class AdministradorController extends Controller
     public function preguntas(Request $request,$id){
         $request->user()->authorizeRoles(['admin']);
         $datos=Preguntas::where('idencuesta',$id)->get();
+<<<<<<< HEAD
         return view('admin.preguntas',compact('datos'));
+=======
+        $datos2=preguntasDesarrollo::where('idencuesta',$id)->first();
+        return view('admin.preguntas',compact('datos','datos2'));
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
     }
 
     /* Función que permite ver los resulados de las encuestas */
     public function verresultados(Request $request,$id){
         $request->user()->authorizeRoles(['admin']);
         $resultados=Resultados::where('idencuesta','=',$id)->get();
+<<<<<<< HEAD
         return view('admin.resultadoencuesta',compact('resultados'));
+=======
+
+        $desarrollo=respuestasDesarrollo::where('idencuesta','=',$id)->get();
+        $preguntaDes=preguntasDesarrollo::where('idencuesta','=',$id)->get();
+
+
+        return view('admin.resultadoencuesta',compact('resultados','desarrollo','preguntaDes'));
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
     }
 
     /* Funcion que retorna a una vista para poder editar datos de una persona*/
@@ -123,7 +146,13 @@ class AdministradorController extends Controller
             $fin=Encuestas::where('id_encuesta','=',$id)->select('finalizada')->get();
             if($fin=='[{"finalizada":1}]'){
                 $resultados=Resultados::where('idencuesta','=',$id)->get();
+<<<<<<< HEAD
                 return view('admin.result',compact('resultados'));
+=======
+                $desarrollo=respuestasDesarrollo::where('idencuesta','=',$id)->get();
+                $preguntaDes=preguntasDesarrollo::where('idencuesta','=',$id)->get();
+                return view('admin.result',compact('resultados','desarrollo','preguntaDes'));
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
             }else{
                 return redirect('admin/ver')->with('Mensaje','La encuesta aun no ha finalizado');
             }

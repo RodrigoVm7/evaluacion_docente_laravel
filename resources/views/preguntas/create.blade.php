@@ -4,11 +4,16 @@
 
 <div class="container">
 
+<<<<<<< HEAD
 
+=======
+<!-- Seccion que permite mostrar mensajes en pantalla-->
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 @if(count($errors)>0)
 <div class="alert alert-danger" role="alert">
 	<ul>
 		@foreach($errors->all() as $error)
+<<<<<<< HEAD
 
 		<li>{{ $error}}</li>
 
@@ -20,6 +25,16 @@
 
 
 Seccion para crear preguntas
+=======
+		<li>{{ $error}}</li>
+		@endforeach
+	</ul>
+</div>
+@endif
+
+<!--Seccion que mediante el llenado de un formulario, permite crear preguntas para una encuesta.
+	Posteriormente, los datos son enviados mediante el método POST a la url "/preguntas/{ID}/index"-->
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 <form action="{{url('/preguntas/'.$id_encuesta.'/index')}}" class="form-horizontal" method="post">
 	{{ csrf_field() }}
 	<div class="form-group">
@@ -59,9 +74,15 @@ Seccion para crear preguntas
 	</div>
 	
 
+<<<<<<< HEAD
 	<input type="submit" class="btn btn-success" value="Agregar">
 
 	<a class="btn btn-primary" href="{{ url('preguntas/'.$id_encuesta.'/index') }}">Regresar</a>
+=======
+	<input type="submit" class="btn btn-success" value="Agregar ✚">
+
+	<a class="btn btn-primary" href="{{ url('preguntas/'.$id_encuesta.'/index') }}">Regresar ←</a>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
 </form>
 </div>

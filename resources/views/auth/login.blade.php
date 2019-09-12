@@ -5,7 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
                 <div class="card-header">{{ __('Login') }}</div>
+=======
+                <div class="card-header">{{ __('Inicio de Sesión') }}</div>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -39,6 +43,7 @@
                             </div>
                         </div>
 
+<<<<<<< HEAD
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
@@ -50,11 +55,18 @@
                                 </div>
                             </div>
                         </div>
+=======
+                        
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
+<<<<<<< HEAD
                                     {{ __('Login') }}
+=======
+                                    {{ __('Iniciar Sesion') }}
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
                                 </button>
 
                                 @if (Route::has('password.request'))

@@ -4,7 +4,12 @@
 
 <div class="container">
 
+<<<<<<< HEAD
 
+=======
+<!--Seccion que mediante el llenado de un formulario, permite responder las preguntas de una encuesta.
+    Posteriormente, los datos son enviados mediante el método POST a la url "/respuestas"-->
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 <form action="{{ url('/respuestas') }}" class="form-horizontal" method="post">
 {{ csrf_field() }}
 @foreach($encuesta as $dato)
@@ -22,6 +27,7 @@
 	<label for="codigoCurso" class="control-lavel">{{ 'Codigo del Curso' }}</label>
 	<input type="text" class="form-control" name="codigoCurso" id="codigoCurso" value="{{$dato->codigoCurso}}"readonly="readonly">
 </div>
+<<<<<<< HEAD
 
 
 
@@ -30,6 +36,21 @@
 		<div class="form-group">
 
             <h5>{{$preg->pregunta}}</h5>
+=======
+    
+    <!--Se define una variable "numit" que corresponde a un contador, el que se imprime junto a cada pregunta-->
+    @php
+        $numit=0
+    @endphp
+
+    <!--Mediante un ciclo for, se irá mostrando las preguntas, junto con sus respectivas alternativas-->
+	@foreach($pregunta as $preg)
+		<div class="form-group">
+            @php
+                $numit=$loop->iteration
+            @endphp
+            <h5>{{$numit.". "}}{{$preg->pregunta}}</h5>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
             <label class="radio-inline">
                 a) <input  type="radio"  name="{{$preg->id_pregunta}}" id="{{$preg->alternativa_a}}" value="a">{{$preg->alternativa_a}}
                 <br>
@@ -47,6 +68,7 @@
         </div>
 	@endforeach
 
+<<<<<<< HEAD
 
 
 
@@ -54,6 +76,21 @@
 
 <input type="submit" class="btn btn-success" value="Responder">
 <a class="btn btn-primary" href="{{ url('respuestas') }}">Regresar</a>
+=======
+    <!-- En caso de existir pregunta de desarrollo, esta se muestra por pantalla-->
+    @if(is_null($desarrollo)==FALSE)
+        <div class="form-group">
+        <h5><label for="pregunta" class="control-label">{{($numit+1).". ".$desarrollo->pregunta}}</label></h5>
+        <input type="text" class="form-control {{$errors->has('pregunta')?'is-invalid':''}}" name="pregunta" id="pregunta" value="">
+        {!! $errors->first('pregunta','<div class="invalid-feedback">:message</div>') !!}
+        </div>
+    @endif
+
+@endforeach
+
+<input type="submit" class="btn btn-success" value="Responder ✍">
+<a class="btn btn-primary" href="{{ url('respuestas') }}">Regresar ←</a>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 </form>
 
 </div>

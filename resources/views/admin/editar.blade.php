@@ -4,7 +4,12 @@
 
 <div class="container">
 
+<<<<<<< HEAD
 
+=======
+<!--Seccion que mediante el método POST, recepciona los datos de un perfil a editar, para luego
+	mandarlos a la url 'admin/perfileditado'-->
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 <form action="{{ url('/admin/perfileditado') }}" class="form-horizontal" method="post">
 {{ csrf_field() }}
 
@@ -23,8 +28,13 @@
 		<input type="text" class="form-control" name="email" id="email" value="{{ $perfil->email}}">
 	</div>
 
+<<<<<<< HEAD
 	<input type="submit" class="btn btn-success" value="Modificar">
 	<a class="btn btn-primary" href="{{ url('admin/index') }}">Regresar</a>
+=======
+	<input type="submit" class="btn btn-success" value="Modificar ✍">
+	<a class="btn btn-primary" href="{{ url('admin/index') }}">Regresar ←</a>
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 
 </form>
 </div>

@@ -7,12 +7,22 @@ use App\Resultados;
 use App\Respuestas;
 use App\Preguntas;
 use App\User;
+<<<<<<< HEAD
+=======
+use App\respuestasDesarrollo;
+use App\preguntasDesarrollo;
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 
 class ResultadosController extends Controller
 {
+<<<<<<< HEAD
+=======
+    /* Funcion que pone en estado finalizado una encuesta, de modo que ya no pueda ser respondida por mas personas, junto
+    con que se calculan los resultados y se envian a una tabla "resultados" en la base de datos*/
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
     public function finalizar(Request $request,$id){
         $request->user()->authorizeRoles(['admin','profesor']);
         Encuestas::where('id_encuesta','=',$id)->update(['finalizada'=> 1]);
@@ -40,6 +50,7 @@ class ResultadosController extends Controller
         return redirect('encuestas')->with('Mensaje','Encuesta finalizada con éxito');
     }
 
+<<<<<<< HEAD
     public function mostrar(Request $request,$id){
         $request->user()->authorizeRoles(['admin','profesor']);
         $resultados=Resultados::where('idencuesta','=',$id)->get();
@@ -48,12 +59,32 @@ class ResultadosController extends Controller
 
     public function perfil(Request $request){
         $request->user()->authorizeRoles(['admin','profesor']);
+=======
+    /* Funcion que retorna a una vista, la cual permite mostrar los resultados de una encuesta*/
+    public function mostrar(Request $request,$id){
+        $request->user()->authorizeRoles(['admin','profesor']);
+        $resultados=Resultados::where('idencuesta','=',$id)->get();
+        $desarrollo=respuestasDesarrollo::where('idencuesta','=',$id)->get();
+        $preguntaDes=preguntasDesarrollo::where('idencuesta','=',$id)->get();
+        return view('respuestas.result',compact('resultados','desarrollo','preguntaDes'));
+    }
+
+    /* Funcion que retorna una vista para poder editar el perfil propio */
+    public function perfil(Request $request){
+        //$request->user()->authorizeRoles(['admin','profesor']);
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
         $perfil=User::findOrFail($request->user()->rut);
         return view('perfil.edit',compact('perfil'));
     }
 
+<<<<<<< HEAD
     public function editarPerfil(Request $request){
         $request->user()->authorizeRoles(['admin','profesor']);
+=======
+    /* Funcino que guarda en la base de datos los cambios realizados a un perfil propio */
+    public function editarPerfil(Request $request){
+        //$request->user()->authorizeRoles(['admin','profesor']);
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
         $datos=request()->except('_token');
         $rut=request()->input('rut');
         User::where('rut','=',$rut)->update($datos);

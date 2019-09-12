@@ -44,6 +44,7 @@ Route::resource('encuestas','EncuestasController')->middleware('auth');
 
 Auth::routes(['register'=>false,'reset'=>false]);
 
+<<<<<<< HEAD
 Route::post('/respuestas', 'RespuestasController@store');
 Route::get('/respuestas', 'RespuestasController@index');
 Route::get('/respuestas/create', 'RespuestasController@create');
@@ -75,3 +76,47 @@ Route::post('/admin/perfileditado','AdministradorController@perfileditado');
 Route::get('/admin/añadir','AdministradorController@añadir');
 Route::post('/admin/insertar','AdministradorController@insertar');
 
+=======
+Route::post('/respuestas', 'RespuestasController@store')->middleware('auth');
+Route::get('/respuestas', 'RespuestasController@index')->middleware('auth');
+Route::get('/respuestas/create', 'RespuestasController@create')->middleware('auth');
+Route::post('/respuestas/show','RespuestasController@show')->middleware('auth');
+Route::get('respuestas/{id}/publicar','RespuestasController@publicar')->middleware('auth');
+
+Route::get('preguntas/{id}/index','PreguntasController@index')->middleware('auth');
+Route::post('preguntas/{id}/index','PreguntasController@store')->middleware('auth');
+Route::get('preguntas/{id}/create','PreguntasController@create')->middleware('auth');
+Route::post('/preguntas/{id_pregunta}/destroy','PreguntasController@destroy')->middleware('auth');
+Route::post('/preguntas/{id_pregunta}/delete','PreguntasController@dele')->middleware('auth');
+Route::get('/preguntas/{id_pregunta}/edit','PreguntasController@edit')->middleware('auth');
+Route::get('/preguntas/{id_pregunta}/editDesarrollo','PreguntasController@editDesarrollo')->middleware('auth');
+Route::post('/preguntas/{id_pregunta}/deleteDesarrollo','PreguntasController@deleteDesarrollo')->middleware('auth');
+
+Route::post('/preguntas/{id_pregunta}','PreguntasController@update')->middleware('auth');
+Route::post('/preguntas/{id_pregunta}/upDesarrollo','PreguntasController@updateDesarrollo')->middleware('auth');
+Route::get('/preguntas/{id_encuesta}/pregdesarrollo','PreguntasController@crearDesarrollo')->middleware('auth');
+Route::post('/preguntas/{id_encuesta}/desarrolloLista','PreguntasController@guardarDesarrollo')->middleware('auth');
+
+Route::get('/resultados/{id}/finalizar','ResultadosController@finalizar')->middleware('auth');
+Route::get('/resultados/{id}/mostrar','ResultadosController@mostrar')->middleware('auth');
+Route::post('/resultados/perfil','ResultadosController@perfil')->middleware('auth');
+Route::post('/resultados/editar','ResultadosController@editarPerfil')->middleware('auth');
+
+Route::get('/admin/index','AdministradorController@index')->middleware('auth');
+Route::get('/admin/ver','AdministradorController@show')->middleware('auth');
+Route::get('/admin/vertodo','AdministradorController@mostrartodo')->middleware('auth');
+Route::post('/admin/show','AdministradorController@mostrar')->middleware('auth');
+Route::get('/admin/{id}/preguntasadmin','AdministradorController@preguntas')->middleware('auth');
+Route::get('/admin/{id}/resultadosadmin','AdministradorController@verresultados')->middleware('auth');
+Route::get('/admin/buscareditar','AdministradorController@buscareditar')->middleware('auth');
+Route::post('/admin/editar','AdministradorController@editar')->middleware('auth');
+Route::post('/admin/perfileditado','AdministradorController@perfileditado')->middleware('auth');
+Route::get('/admin/añadir','AdministradorController@añadir')->middleware('auth');
+<<<<<<< HEAD
+Route::post('/admin/insertar','AdministradorController@insertar')->middleware('auth');
+Route::get('/encuesta/api','EncuestasController@getEncuestas')->middleware('auth');
+Route::get('/prueba','PreguntasController@prueba')->middleware('auth');
+=======
+Route::post('/admin/insertar','AdministradorController@insertar')->middleware('auth');
+>>>>>>> 9fe3ef526a30b386156f98d450c0963108d7334b
+>>>>>>> 80d32b5e3a86f2cc8107eb131dd79e28b6d6cc39
